@@ -12,6 +12,7 @@ import { environment } from '../environments/environment'
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { ShareModule } from './share/share.module';
+import {CreatepostModule} from './createpost/createpost.module';
 import {RoutingModule} from './routing.module';
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {RoutingModule} from './routing.module';
     BrowserAnimationsModule,
     CoreModule,
     ShareModule,
+    CreatepostModule,
     RoutingModule
   ],
   providers: [],
