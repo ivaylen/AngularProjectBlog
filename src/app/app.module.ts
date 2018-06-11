@@ -12,7 +12,7 @@ import { environment } from '../environments/environment'
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { ShareModule } from './share/share.module';
-
+import {RoutingModule} from './routing.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -25,7 +25,8 @@ import { ShareModule } from './share/share.module';
     BrowserModule,
     BrowserAnimationsModule,
     CoreModule,
-    ShareModule
+    ShareModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
