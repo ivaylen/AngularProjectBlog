@@ -16,12 +16,14 @@ import { ShareModule } from './share/share.module';
 
 import { PostsModule } from './posts/posts.module';
 
+import { FooterComponent } from './footer/footer.component'
+import { RoutingModule } from './routing.module';
 
-import { RoutingModule } from './routing.module'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
@@ -32,7 +34,7 @@ import { RoutingModule } from './routing.module'
     BrowserAnimationsModule,
     CoreModule,
     ShareModule, 
-    PostsModule,
+    PostsModule,  
     RoutingModule
   ],
   providers: [],
