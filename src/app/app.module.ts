@@ -18,12 +18,14 @@ import { PostsModule } from './posts/posts.module';
 
 import { FooterComponent } from './footer/footer.component'
 import { RoutingModule } from './routing.module';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
