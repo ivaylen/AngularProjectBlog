@@ -7,12 +7,13 @@ import { PostDashboardComponent } from './post-dashboard/post-dashboard.componen
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostService } from './post.service';
-
+import { AboutComponent } from '../about/about.component';
 import {RouterModule, Routes} from '@angular/router';
 const routes: Routes = [
   { path: 'blog', component: PostListComponent },
   { path: 'blog/:id', component: PostDetailComponent },
   { path: 'dashboard', component: PostDashboardComponent },
+  { path: 'about', component: AboutComponent}
 ]
 
 @NgModule({

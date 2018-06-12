@@ -1,7 +1,7 @@
 <mat-toolbar color="warn">
   <mat-toolbar-row>
     <span routerLink="/">Post-Blog</span>
-    <span routerLink="/">About</span>
+    <span routerLink="about">About</span>
     <span class="spacer"></span>
     <button routerLink="/dashboard" mat-raised-button color="primary">Write a new Post</button>
     <div *ngIf="auth.afAuth.authState | async as user; else showLogin"> 
