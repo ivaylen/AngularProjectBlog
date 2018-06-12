@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: '', loadChildren: './posts/posts.module#PostsModule' }
 ]
 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

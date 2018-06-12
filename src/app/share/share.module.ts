@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 
-import { RouterModule } from '@angular/router';
+
 
 import {FormsModule} from '@angular/forms';
 import { MaterialModule } from '../material.module';
 import { NavbarComponent } from './navbar/navbar.component';
 
-
+import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     CommonModule, FormsModule,
@@ -17,7 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   exports: [
     CommonModule,FormsModule,
     MaterialModule,
-    NavbarComponent, RouterModule
+   NavbarComponent, RouterModule
   ],
   declarations: [NavbarComponent]
 })

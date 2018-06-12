@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AngularFireModule } from 'angularfire2'
 import { AngularFirestoreModule } from 'angularfire2/firestore'
 import { AngularFireStorageModule } from 'angularfire2/storage'
@@ -12,8 +13,12 @@ import { environment } from '../environments/environment'
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { ShareModule } from './share/share.module';
-import {CreatepostModule} from './createpost/createpost.module';
-import {RoutingModule} from './routing.module';
+
+import { PostsModule } from './posts/posts.module';
+
+
+import { RoutingModule } from './routing.module'
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,8 +31,8 @@ import {RoutingModule} from './routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     CoreModule,
-    ShareModule,
-    CreatepostModule,
+    ShareModule, 
+    PostsModule,
     RoutingModule
   ],
   providers: [],
